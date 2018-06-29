@@ -1,0 +1,118 @@
+nav, main, header, article, footer {
+    display: block;
+}
+
+body {
+    background-image: url(Images/Dragon%20Age.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: darkgray;
+    color: white;
+    box-shadow: 2px 2px 5px #333;
+    text-align: center;
+}
+
+nav {
+    background: gray;
+    padding: 5px;
+}
+
+nav ul {
+    text-align: center;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    background: black;
+    border-radius: 12px;
+    padding: 7px;
+}
+
+nav li:hover {
+    background: green;
+}
+
+nav a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #333;
+}
+
+main {
+    padding: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+footer {
+    border-top: 1px solid black;
+    background-color: lightgray;
+}
+
+.footer-text-left {
+    float: left;
+}
+
+.footer-text-right {
+    float: right;
+}
+
+#wrap {
+    background: lightgray;
+    margin: 0 auto;
+    width: 70%;
+    opacity: 1.0;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    #wrap {
+        width: 70%;
+    }
+    
+    nav li {
+        display: block;
+    }
+    
+    article {
+        float: none;
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #wrap {
+        width: 99%;
+    }
+    
+    main img {
+        display: none;
+    }
+    
+    nav li {
+        display: block;
+        padding: 10px;
+    }
+    
+    .footer-text-left {
+        float: none;
+        width: 99%;
+    }
+    
+    .footer-text-right {
+        margin-left: auto;
+    }
+}
